@@ -30,6 +30,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping("/list")
     public Object list(){
+        System.out.println("测试分支");
         List<Map> userlist = userService.getUserList();
         Map map = new HashMap();
         map.put("ip","207.31");
